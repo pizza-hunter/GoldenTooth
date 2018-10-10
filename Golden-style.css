@@ -1,0 +1,132 @@
+#navContainer{
+/*    background-color: skyblue*/
+}
+/*Categories delicious and disgusting*/
+#navTitle{
+    font-family:serif;
+    font-size: 21px;
+    color:#a8a8a8;
+    padding-top: 0.6em;
+}
+/*Golden Tooth logo and text*/
+#navIcon{
+    font-family:serif;
+    font-size: 30px;
+    color: #bfbd6d;
+    padding-top: 0.25em;
+    padding-left: 0.25em;
+    opacity: ;
+}
+/*Navigation row*/
+#navRow{
+    border-bottom: 2px;
+    border-bottom-color:#e2e2e2;
+    border-bottom-style:solid;
+    background-color: #efefef;
+    z-index: 50;
+}
+/*Nav hover effect*/
+#navRow a:hover{
+    color: black;
+    opacity: 0.2;
+}
+/*Row containing large message*/
+#feedHeadRow{
+    border-top: 2px;
+    border-top-color: #efefef;
+    border-top-style: solid;
+}
+/*Large message about page*/
+#feedDescription{
+    padding-top: 1.5em;
+    padding-left: 0.5em;
+}
+/*Small message above images*/
+#feedCover{
+    text-align: center;
+    font-family: serif;
+    font-size: 18px;
+    padding-top: 1em;
+    opacity: 0.55;
+    
+}
+/*Strong underline above images*/
+#feedCoverLine{
+    border-bottom: 5px;
+    border-bottom-color: efefef;
+    border-bottom-style: groove;
+}
+#feedContainer{
+}
+/*Keep images equal width*/
+#feedItemRow img{
+    max-width:80%;
+}
+/*Hover effect for images*/
+#feedItemRow img:hover{
+    transition: 
+}
+/*Row for each image*/
+#feedItemRow{
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/*Images*/
+#tooth{
+    border-style: groove;
+    border-width: 7px;
+    border-color: #847870;
+}
+/*Wording above pictures*/
+#toothHead{
+    font-family:monospace;
+    opacity: 0.30;
+    padding-left: 2.5em;
+}
+/*Wording below pictures*/
+#toothChin{
+    font-family:monospace;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+#toothIcon{
+    padding-top: 0.2em;
+    height: 2.5em;
+    width: 2.5em;
+    filter: grayscale(100%);
+}
+#toothLikes img{
+    float: left;
+    margin-top: 0.31em;
+}
+#toothLikes div{
+    float: left;
+    padding-left: 0.5em;
+}
+#likeButton{
+    border-radius: 7px;
+    border-color: #d3d3d3;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#result{
+    font-family:monospace;
+    font-size: 13px;
+}
+/*Makes Ingredients icons dissapear*/
+@media screen and (max-width:800px) {  
+  #excessChin {
+    display: none;
+  }
+}
+/*Footer text*/
+#footText{
+    text-align: center;
+    font-family: serif;
+    opacity: 0.4;
+    font-size: 14px;
+}

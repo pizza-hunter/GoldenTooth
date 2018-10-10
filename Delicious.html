@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Golden-style.css">
+    
+    <title>Delicious</title>
+    
+<!--------------------- LIKE COUNTER SPACE ------------------------>
+    <script>
+        function clickCounter() {
+            if(typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = localStorage.clickcount;
+            } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        function clickCounter2() {
+            if(typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result2").innerHTML = localStorage.clickcount;
+            } else {
+            document.getElementById("result2").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        function clickCounter3() {
+            if(typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result3").innerHTML = localStorage.clickcount;
+            } else {
+            document.getElementById("result3").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        function clickCounter4() {
+            if(typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result4").innerHTML = localStorage.clickcount;
+            } else {
+            document.getElementById("result4").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+    <div id="navContainer" class="container-fluid">
+        
+<!--------------------- NAVIGATION SPACE ------------------------>
+        <div class="row" id="navRow">
+            <div class="col">
+                <h1 id="navIcon">Golden Tooth</h1>
+            </div>
+            <div class="col">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="navTitle" href="#">Delicious</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="navTitle" href="#">Disgusting</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--------------------- DESCRIPTION SPACE ------------------------>
+        
+        <div id="feedHeadRow" class="row">
+            <div class="col">
+                <div id="feedDescription">
+                    <h3>Deliciously Irresistible</h3>
+                    <p>Each Golden Tooth descended from a place prettier than heaven, a kitchen. Here you can see the greatest cuisine ever to rest in front of a camera.</p>
+                    <hr class="my-4">
+                </div>
+                <h6 id="feedCover">Most delicious stream of goodies ever...</h6>
+                <div class="row">
+                    <div class="col"></div>
+                    <div id ="feedCoverLine" class="col-9"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<!------------------------- FEED SPACE --------------------------->
+
+    <div id="feedContainer" class="container">
+    <div id="feedRow" class="Row">
+            <div class="col"></div>
+            <div class="col">
+<!--------- FIRST IMAGE ---------->
+                <div id="feedItemRow" class="row">
+                    <div id="feedItemCol" class="col">
+                        <div id="toothHead" class="row">
+                            <div class="col">Tooth_Hunter</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <img id="tooth" src="GoldenTooth/ToothImages/burgaz.jpg" class="rounded img-fluid"/>
+                        <div id="toothChin" class="row">
+                            <div class="col" id="toothID">Old lettuce</div>
+                            <div id="excessChin" class="col"> 
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/meat.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/gluten.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/dairy.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/lunch.png">
+                            </div>
+                            <div id="toothLikes" class="col">
+                                <button id="likeButton" onclick="clickCounter()" type="button">
+                                    <img src="GoldenTooth/ToothImages/like.png" height="10px">
+                                    <div id="result"></div>
+                                </button>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-------- SECOND IMAGE ---------->
+                <div id="feedItemRow" class="row">
+                    <div id="feedItemCol" class="col">
+                         <div id="toothHead" class="row">
+                            <div class="col">Tooth_Hunter</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <img id="tooth" src="GoldenTooth/ToothImages/grilledCheese.jpg" class="rounded img-fluid"/>
+                        <div id="toothChin" class="row">
+                            <div class="col" id="toothID">Small plate</div>
+                            <div id="excessChin" class="col">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/meat.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/gluten.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/dairy.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/breakfast.png">
+                            </div>
+                            <div id="toothLikes" class="col">
+                                <button id="likeButton" onclick="clickCounter2()" type="button">
+                                    <img src="GoldenTooth/ToothImages/like.png" height="10px">
+                                    <div id="result2"></div>
+                                </button>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!------ THIRD IMAGE --------->
+                <div id="feedItemRow" class="row">
+                    <div id="feedItemCol" class="col">
+                         <div id="toothHead" class="row">
+                            <div class="col">Tooth_Hunter</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <img id="tooth" src="GoldenTooth/ToothImages/burgerShake.jpg" class="rounded img-fluid"/>
+                        <div id="toothChin" class="row">
+                            <div class="col" id="toothID">Bottom bun</div>
+                            <div id="excessChin" class="col">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/meat.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/gluten.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/dairy.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/dessert.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/lunch.png">
+                            </div>
+                            <div id="toothLikes" class="col">
+                                <button id="likeButton" onclick="clickCounter3()" type="button">
+                                    <img src="GoldenTooth/ToothImages/like.png" height="10px">
+                                    <div id="result3"></div>
+                                </button>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-------- FOURTH IMAGE ---------->
+                <div id="feedItemRow" class="row">
+                    <div id="feedItemCol" class="col">
+                        <div id="toothHead" class="row">
+                            <div class="col">Tooth_Hunter</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <img id="tooth" src="GoldenTooth/ToothImages/toothLasanga.jpg" class="rounded img-fluid"/>
+                        <div id="toothChin" class="row">
+                            <div class="col" id="toothID">Pasta Splinter</div>
+                            <div id="excessChin" class="col"> 
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/meat.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/gluten.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/dairy.png">
+                                <img id="toothIcon" src="GoldenTooth/ToothImages/lunch.png">
+                            </div>
+                            <div id="toothLikes" class="col">
+                                <button id="likeButton" onclick="clickCounter4()" type="button">
+                                    <img src="GoldenTooth/ToothImages/like.png" height="10px">
+                                    <div id="result4"></div>
+                                </button>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col"></div>
+        </div>
+   </div>
+    
+      
+<!--------------------- FOOTER SPACE ------------------------>
+    
+    <div id="footerContainer" class="container-fluid">
+        <div class="footerRow">
+            <div class="col"></div>
+            <div class="col">
+                <hr style="width: 20em" class="my-2">
+                <p id="footText">The Golden Tooth courtesy of <br />
+                    Hunter Green Inc ©</p>    
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+    
+<script>
+    
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navRow");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</html>
